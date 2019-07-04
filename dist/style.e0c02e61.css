@@ -1,16 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway|Permanent+Marker&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
-nav {
+li {
+  display: flex;
+  justify-content: center;
+  /* For horizontal alignment */
+  align-items: center;
+  /* For vertical alignment */
+  width: 25%;
+  height: 100%; }
+
+.nav-home {
+  background-color: #69D2E7; }
+
+.nav-about {
+  background-color: #A7DBD8; }
+
+.nav-contact {
   background-color: #FA6900; }
+
+.nav-projects {
+  background-color: #E0E4CC; }
 
 .nav-list {
   height: 10vh;
   display: flex;
-  width: 50%;
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
@@ -18,26 +35,50 @@ nav {
   font-family: 'Permanent Marker', cursive; }
 
 .nav-links {
+  display: flex;
   text-decoration: none;
   color: black;
-  font-size: 20px; }
+  font-size: 20px;
+  width: 33vh;
+  justify-content: center; }
 
-.home, .about, .contact {
+.home, .about, .contact, .projects {
   height: 90vh;
   position: absolute;
   width: 100%;
-  font-family: 'Lobster', cursive; }
+  font-family: 'Raleway', sans-serif; }
 
-.home-content, .about-content {
+.home-content, .about-content, .projects-content {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
-  .home-content img, .about-content img {
-    height: 80%; }
-  .home-content h1, .about-content h1 {
+  align-items: center;
+  flex-wrap: wrap; }
+  .home-content img, .about-content img, .projects-content img {
+    height: 100%; }
+  .home-content h1, .about-content h1, .projects-content h1 {
     font-size: 50px;
     margin: 30px 0px; }
+
+.about-photo, .about-presentation {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%; }
+
+.about-presentation {
+  background-color: #E0E4CC;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about-presentation h1 {
+    font-size: 80px; }
+
+.about-text {
+  font-size: 25px;
+  margin: 0vh 10vh 0vh 10vh;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif; }
 
 .contact-content {
   height: 100%;
@@ -83,7 +124,7 @@ nav {
   border-color: #E0E4CC; }
 
 .home {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+  background-color: #69D2E7; }
 
 .about {
   background-color: #A7DBD8; }
@@ -91,7 +132,32 @@ nav {
 .contact {
   background-color: #FA6900; }
 
+.projects {
+  background-color: #E0E4CC; }
+
 @media (max-width: 1000px) {
+  .contact-resume, .contact-email {
+    height: 50%;
+    width: 100%; }
+  .change-square {
+    width: 300px;
+    height: 300px;
+    line-height: 270px;
+    text-align: center;
+    border-radius: 0%;
+    border: 15px solid white;
+    transition: .2s;
+    font-size: 24px; }
+  .contact-resume:hover .change-square {
+    border-radius: 50%;
+    height: 300px;
+    line-height: 270px; }
+  .contact-email:hover .change-square {
+    border-radius: 50%;
+    height: 300px;
+    line-height: 270px; } }
+
+@media (max-width: 400px) {
   .contact-resume, .contact-email {
     height: 50%;
     width: 100%; }
