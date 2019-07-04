@@ -1,0 +1,19 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "That's my repository with my personal website code. Site is live on michalkruk.tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalkruk/michalkruk-tech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalkruk/michalkruk-tech/issues"
+  },
+  "homepage": "https://github.com/michalkruk/michalkruk-tech#readme"
+}
