@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+nav{
+    background-color: #FA6900;
 }
 
 .nav-list {
@@ -12,6 +18,7 @@
     align-items: center;
     margin-left: auto;
     list-style: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .nav-links{
@@ -24,9 +31,12 @@
     height: 90vh;
     position: absolute;
     width: 100%;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Lobster', cursive;
+    // font-family: 'Playfair Display SC', serif;
 }
 
-.home-content, .about-content, .contact-content{
+.home-content, .about-content{
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -40,14 +50,98 @@
     }
 }
 
+.contact-content{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.contact-resume, .contact-email{
+    display: flex;
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
+    height: 100%;
+    width: 50%;
+}
+
+.change-square{
+    width: 400px;
+    height: 400px;
+    line-height: 370px;
+    text-align: center;
+    border-radius: 0%;
+    border: 15px solid white;
+    transition: .2s;
+    font-size: 30px;
+}
+
+.contact-resume:hover .change-square{
+    border-radius: 50%;
+    height: 400px;
+    line-height: 370px;
+}
+
+.contact-email:hover .change-square{
+    border-radius: 50%;
+    height: 400px;
+    line-height: 370px;
+}
+
+
+.contact-resume{
+    background-color: #E0E4CC;
+}
+
+.contact-resume .change-square{
+    border-color: #FA6900;
+}
+
+.contact-email .change-square{
+    border-color: #E0E4CC;
+}
+
 .home{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .about{
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-color: #A7DBD8;
 }
 
 .contact{
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-color: #FA6900;
+}
+
+@media (max-width: 1000px){
+
+    .contact-resume, .contact-email{
+        height: 50%;
+        width: 100%;
+    }
+
+    .change-square{
+        width: 200px;
+        height: 200px;
+        line-height: 170px;
+        text-align: center;
+        border-radius: 0%;
+        border: 15px solid white;
+        transition: .2s;
+        font-size: 15px;
+    }
+    
+    .contact-resume:hover .change-square{
+        border-radius: 50%;
+        height: 200px;
+        line-height: 170px;
+    }
+    
+    .contact-email:hover .change-square{
+        border-radius: 50%;
+        height: 200px;
+        line-height: 170px;
+    }
+    
+
 }
