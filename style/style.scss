@@ -20,6 +20,7 @@ li{
     height: 100%;
 }
 
+
 .nav-home{
     background-color: #69D2E7;
 }
@@ -45,16 +46,23 @@ li{
     margin-left: auto;
     list-style: none;
     font-family: 'Permanent Marker', cursive;
+    a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
 .nav-links{
-    display: flex;
     text-decoration: none;
     color: black;
     font-size: 40px;
     justify-content: center;
 }
+
 
 .home, .about, .contact,.projects{
     height: 90vh;
@@ -63,7 +71,7 @@ li{
     font-family: 'productsFont', sans-serif;
 }
 
-.home-content, .about-content, .projects-content{
+.home-content, .about-content{
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -121,6 +129,128 @@ li{
     font-family: 'Raleway', sans-serif;
 }
 
+.projects-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        font-size: 60px;
+    }
+}
+
+.projects-title{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.wrap{
+    margin:50px auto 0 auto;
+    width:100%;
+    display:flex;
+    align-items:space-around;
+    max-width:1200px;
+}
+
+.tile{
+    width:380px;
+    height:380px;
+    margin:10px;
+    background-color:#69D2E7;
+    display:inline-block;
+    background-size:cover;
+    position:relative;
+    cursor:pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+    overflow:hidden;
+    color:#E0E4CC;
+    border: #69D2E7 2px solid;
+}
+
+.tile img{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    transition: all 0.4s ease-out;
+}
+
+.tile .text{
+    position:absolute;
+    padding:30px;
+    height:calc(100% - 60px);
+    p{
+        text-align: justify;
+        
+    }
+    a{
+        color: inherit;
+    }
+}
+
+.tile h1{
+    text-decoration: line-through;
+    font-size: 30px;
+    font-weight:300;
+    margin:0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.tile h2{
+    font-weight:100;
+    margin:20px 0 0 0;
+    font-style:italic;
+    transform: translateX(200px);
+    color: black;
+}
+
+.tile p{
+    font-weight:300;
+    margin:20px 0 0 0;
+    line-height: 25px;
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+    color: black;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+.animate-text{
+    opacity:0;
+    transition: all 0.6s ease-in-out;
+}
+
+.tile:hover{
+    box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+    transform:scale(1.05);
+}
+
+.tile:hover h1{
+    text-decoration: none;
+}
+
+.tile:hover img{
+    opacity: 0.2;
+}
+
+.tile:hover .animate-text{
+    transform:translateX(0);
+    opacity:1;
+}
+
+.tile:hover span{
+    opacity:1;
+    transform:translateY(0px);
+}
+
+
+
 .contact-content{
     height: 100%;
     display: flex;
@@ -134,21 +264,6 @@ li{
     height: 100%;
     width: 50%;
 }
-
-.strikeout {
-    font-size: 4em;
-    line-height: 1em;
-    position: relative;
-  }
-  .strikeout::after {
-    border-bottom: 0.125em solid red;
-    content: "";
-    left: 0;
-    margin-top: calc(0.125em / 2 * -1);
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
 
 .change-square{
     width: 400px;
@@ -199,10 +314,22 @@ li{
 }
 
 .projects{
-    background-color: #E0E4CC;
+    background-image: url('/images/website-dots.png');
 }
 
+.projects-single{
+    background-color: #69D2E7;
+}
+
+
+
+
 @media (max-width: 1000px){
+
+    .wrap {
+        flex-direction: column;
+         width:400px;
+       }
 
     .home-content{
         flex-direction: column-reverse;
@@ -277,7 +404,9 @@ li{
 
 @media (max-width: 400px){
 
-    
+    .wrap{
+        width: 300px;
+    }
 
     .contact-resume, .contact-email{
         height: 50%;
