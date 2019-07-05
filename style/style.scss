@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway|Permanent+Marker&display=swap');
 
+@font-face {
+    font-family: productsFont;
+    src: url('/fonts/Product\ Sans\ Regular.ttf');
+  }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -47,8 +52,7 @@ li{
     display: flex;
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    width: 33vh;
+    font-size: 40px;
     justify-content: center;
 }
 
@@ -56,7 +60,7 @@ li{
     height: 90vh;
     position: absolute;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'productsFont', sans-serif;
 }
 
 .home-content, .about-content, .projects-content{
@@ -72,6 +76,23 @@ li{
         font-size: 50px;
         margin: 30px 0px;
     }
+}
+
+.home-presentation{
+    h1{
+        font-size: 180px;
+    }
+}
+
+.home-skills{
+    p{
+        transform: rotate(-45deg);
+        line-height: 1.5;
+    }
+}
+
+.color{
+    color: #FA6900;
 }
 
 .about-photo, .about-presentation {
@@ -114,6 +135,21 @@ li{
     width: 50%;
 }
 
+.strikeout {
+    font-size: 4em;
+    line-height: 1em;
+    position: relative;
+  }
+  .strikeout::after {
+    border-bottom: 0.125em solid red;
+    content: "";
+    left: 0;
+    margin-top: calc(0.125em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
 .change-square{
     width: 400px;
     height: 400px;
@@ -151,7 +187,7 @@ li{
 }
 
 .home{
-    background-color: #69D2E7;
+    background-image: url('/images/Website_stripes.png')
 }
 
 .about{
@@ -167,6 +203,27 @@ li{
 }
 
 @media (max-width: 1000px){
+
+    .home-content{
+        flex-direction: column-reverse;
+    }
+
+    .home-presentation{
+        h1{
+            font-size: 150px;
+        }
+    }
+
+    .home-skills{
+        p{
+        transform: rotate(0deg);
+        font-size: 25px;
+        }
+    }
+
+    .nav-links{
+        font-size: 30px;
+    }
 
     .contact-resume, .contact-email{
         height: 50%;
@@ -199,7 +256,28 @@ li{
 
 }
 
+@media (max-width: 550px){
+    .nav-links{
+        font-size: 20px;
+    }
+
+    .home-presentation{
+        h1{
+            font-size: 100px;
+        }
+    }
+
+    .home-skills{
+        p{
+        transform: rotate(0deg);
+        font-size: 15px;
+        }
+    }
+}
+
 @media (max-width: 400px){
+
+    
 
     .contact-resume, .contact-email{
         height: 50%;
