@@ -341,7 +341,7 @@ li{
     background-image: url('/images/Website_stripes.png');
 }
 
-.about{
+.about, .about-content{
     background-color: #A7DBD8;
     // background-image: url('/images/background-stars.png');
 }
@@ -376,6 +376,7 @@ li{
     }
 
     .wrap{
+        margin-top: 20px;
         flex-direction: column;
         max-width:400px; 
         align-items: center;

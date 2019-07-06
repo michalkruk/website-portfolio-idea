@@ -267,7 +267,7 @@ li {
 .home {
   background-image: url("/Website_stripes.7dc202be.png"); }
 
-.about {
+.about, .about-content {
   background-color: #A7DBD8; }
 
 .contact {
@@ -289,6 +289,7 @@ li {
   .about-rightpanel {
     max-width: 100%; }
   .wrap {
+    margin-top: 20px;
     flex-direction: column;
     max-width: 400px;
     align-items: center; } }
