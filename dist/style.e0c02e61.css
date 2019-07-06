@@ -268,12 +268,12 @@ li {
   background-image: url("/Website_stripes.7dc202be.png"); }
 
 .about {
-  background-image: url("/background-stars.11f7e00e.png"); }
+  background-color: #A7DBD8; }
 
 .contact {
   background-color: #FA6900; }
 
-.projects {
+.projects, .projects-content {
   background-image: url("/website-dots.36259497.png"); }
 
 .projects-single {

@@ -342,15 +342,15 @@ li{
 }
 
 .about{
-    // background-color: #A7DBD8;
-    background-image: url('/images/background-stars.png');
+    background-color: #A7DBD8;
+    // background-image: url('/images/background-stars.png');
 }
 
 .contact{
     background-color: #FA6900;
 }
 
-.projects{
+.projects,.projects-content{
     background-image: url('/images/website-dots.png');
 }
 
