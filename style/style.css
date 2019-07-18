@@ -243,6 +243,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
@@ -253,7 +255,7 @@ li {
   width: 380px;
   height: 380px;
   margin: 10px;
-  background-color: #69d2e7;
+  background-color: #e0e4cc;
   display: inline-block;
   background-size: cover;
   position: relative;
@@ -263,7 +265,7 @@ li {
   -webkit-box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
           box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
-  color: #e0e4cc;
+  color: #222;
   border: #69d2e7 2px solid;
 }
 
@@ -293,8 +295,7 @@ li {
 }
 
 .tile h1 {
-  text-decoration: line-through;
-  font-size: 30px;
+  font-size: 0px;
   font-weight: 300;
   margin: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -338,7 +339,7 @@ li {
 }
 
 .tile:hover h1 {
-  text-decoration: none;
+  font-size: 30px;
 }
 
 .tile:hover img {
@@ -447,7 +448,7 @@ li {
   background-color: #69d2e7;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .about-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -510,6 +511,12 @@ li {
   .nav-links {
     font-size: 30px;
   }
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .contact-resume,
   .contact-email {
     height: 50%;
@@ -567,6 +574,9 @@ li {
 }
 
 @media (max-width: 400px) {
+  .nav-links {
+    font-size: 18px;
+  }
   .about-rightpanel {
     margin: 0vh 2vh 0vh 2vh;
     font-size: 15px;

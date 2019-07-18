@@ -171,6 +171,7 @@ li {
     margin: 50px auto 0 auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: space-around;
     max-width: 1200px;
 }
@@ -179,7 +180,7 @@ li {
     width: 380px;
     height: 380px;
     margin: 10px;
-    background-color: #69d2e7;
+    background-color: #e0e4cc;
     display: inline-block;
     background-size: cover;
     position: relative;
@@ -187,7 +188,7 @@ li {
     transition: all 0.4s ease-out;
     box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
     overflow: hidden;
-    color: #e0e4cc;
+    color: #222;
     border: #69d2e7 2px solid;
 }
 
@@ -214,8 +215,7 @@ li {
 }
 
 .tile h1 {
-    text-decoration: line-through;
-    font-size: 30px;
+    font-size: 0px;
     font-weight: 300;
     margin: 0;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -253,7 +253,7 @@ li {
 }
 
 .tile:hover h1 {
-    text-decoration: none;
+    font-size: 30px;
 }
 
 .tile:hover img {
@@ -347,7 +347,7 @@ li {
     background-color: #69d2e7;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
     .about-content {
         flex-direction: column;
         height: auto;
