@@ -233,6 +233,14 @@ li {
 
 .about-socials a {
   color: inherit;
+  opacity: 0.8;
+}
+
+.about-socials a:hover {
+  opacity: 1;
+  color: #fa6900;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .projects-content {
@@ -246,6 +254,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .projects-title {
@@ -264,21 +273,22 @@ li {
 }
 
 .wrap {
-  margin: 50px auto 0 auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
-  max-width: 1200px;
 }
 
 .tile {
-  width: 380px;
+  width: 420px;
   height: 380px;
   margin: 10px;
   background-color: #e0e4cc;
@@ -458,7 +468,8 @@ li {
 
 .about,
 .about-content {
-  background-color: #a7dbd8;
+  background: -webkit-gradient(linear, left top, right top, from(#e0e4cc), to(#a7dbd8));
+  background: linear-gradient(to right, #e0e4cc, #a7dbd8);
 }
 
 .contact {
@@ -467,7 +478,7 @@ li {
 
 .projects,
 .projects-content {
-  background-image: url("/images/website-dots.png");
+  background-color: #e0e4cc;
 }
 
 .projects-single {
@@ -488,17 +499,6 @@ li {
   }
   .about-rightpanel {
     max-width: 100%;
-  }
-  .wrap {
-    margin-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 400px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -609,9 +609,6 @@ li {
   .about-rightpanel {
     margin: 0vh 2vh 0vh 2vh;
     font-size: 15px;
-  }
-  .wrap {
-    width: 300px;
   }
   .contact-resume,
   .contact-email {

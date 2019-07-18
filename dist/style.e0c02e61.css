@@ -132,12 +132,18 @@ li {
   justify-content: space-around;
   max-width: 200px; }
   .about-socials a {
-    color: inherit; }
+    color: inherit;
+    opacity: 0.8; }
+  .about-socials a:hover {
+    opacity: 1;
+    color: #fa6900;
+    transition: 0.5s; }
 
 .projects-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
 
 .projects-title {
   display: flex;
@@ -148,15 +154,14 @@ li {
     font-family: "Permanent Marker", cursive; }
 
 .wrap {
-  margin: 50px auto 0 auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: space-around;
-  max-width: 1200px; }
+  justify-content: center;
+  align-items: space-around; }
 
 .tile {
-  width: 380px;
+  width: 420px;
   height: 380px;
   margin: 10px;
   background-color: #e0e4cc;
@@ -287,14 +292,14 @@ li {
 
 .about,
 .about-content {
-  background-color: #a7dbd8; }
+  background: linear-gradient(to right, #e0e4cc, #a7dbd8); }
 
 .contact {
   background-color: #fa6900; }
 
 .projects,
 .projects-content {
-  background-image: url("/website-dots.36259497.png"); }
+  background-color: #e0e4cc; }
 
 .projects-single {
   background-color: #69d2e7; }
@@ -307,12 +312,7 @@ li {
     margin-top: 2vh;
     max-width: 100%; }
   .about-rightpanel {
-    max-width: 100%; }
-  .wrap {
-    margin-top: 20px;
-    flex-direction: column;
-    max-width: 400px;
-    align-items: center; } }
+    max-width: 100%; } }
 
 @media (max-width: 1000px) {
   .ball {
@@ -387,8 +387,6 @@ li {
   .about-rightpanel {
     margin: 0vh 2vh 0vh 2vh;
     font-size: 15px; }
-  .wrap {
-    width: 300px; }
   .contact-resume,
   .contact-email {
     height: 50%;

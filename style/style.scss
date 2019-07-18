@@ -164,6 +164,12 @@ li {
     max-width: 200px;
     a {
         color: inherit;
+        opacity: 0.8;
+    }
+    a:hover {
+        opacity: 1;
+        color: #fa6900;
+        transition: 0.5s;
     }
 }
 
@@ -171,6 +177,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .projects-title {
@@ -184,16 +191,16 @@ li {
 }
 
 .wrap {
-    margin: 50px auto 0 auto;
+    // margin: 50px auto 0 auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: space-around;
-    max-width: 1200px;
 }
 
 .tile {
-    width: 380px;
+    width: 420px;
     height: 380px;
     margin: 10px;
     background-color: #e0e4cc;
@@ -346,8 +353,8 @@ li {
 
 .about,
 .about-content {
-    background-color: #a7dbd8;
-    // background-image: url('/images/background-stars.png');
+    background: linear-gradient(to right, #e0e4cc, #a7dbd8);
+    // background-image: url("/images/website-dots.png");
 }
 
 .contact {
@@ -356,7 +363,7 @@ li {
 
 .projects,
 .projects-content {
-    background-image: url("/images/website-dots.png");
+    background-color: #e0e4cc;
 }
 
 .projects-single {
@@ -376,13 +383,6 @@ li {
 
     .about-rightpanel {
         max-width: 100%;
-    }
-
-    .wrap {
-        margin-top: 20px;
-        flex-direction: column;
-        max-width: 400px;
-        align-items: center;
     }
 }
 
@@ -509,10 +509,6 @@ li {
     .about-rightpanel {
         margin: 0vh 2vh 0vh 2vh;
         font-size: 15px;
-    }
-
-    .wrap {
-        width: 300px;
     }
 
     .contact-resume,
