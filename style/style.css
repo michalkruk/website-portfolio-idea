@@ -204,9 +204,35 @@ li {
 }
 
 .about-rightpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 50%;
   text-align: justify;
   margin: 0 10vh 0 10vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-text {
+  margin-bottom: 2vh;
+}
+
+.about-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 200px;
+}
+
+.about-socials a {
+  color: inherit;
 }
 
 .projects-content {
@@ -485,7 +511,7 @@ li {
     height: 300px;
   }
   .tile h1 {
-    font-size: 20px;
+    font-size: 0px;
   }
   .tile h2 {
     font-size: 15px;
@@ -493,6 +519,9 @@ li {
   .tile p {
     font-size: 12px;
     line-height: 1.6;
+  }
+  .tile:hover h1 {
+    font-size: 20px;
   }
   .home-content {
     -webkit-box-orient: vertical;
@@ -609,6 +638,24 @@ li {
     border-radius: 50%;
     height: 200px;
     line-height: 170px;
+  }
+}
+
+@media (max-width: 350px) {
+  .tile {
+    height: 250px;
+    width: 250px;
+  }
+  .tile h2 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .tile p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .tile:hover h1 {
+    font-size: 15px;
   }
 }
 
