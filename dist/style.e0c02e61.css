@@ -323,6 +323,8 @@ li {
     font-size: 25px; }
   .nav-links {
     font-size: 30px; }
+  .contact-content {
+    flex-direction: column-reverse; }
   .contact-resume,
   .contact-email {
     height: 50%;
