@@ -422,15 +422,41 @@ li {
   .tile:hover h1 {
     font-size: 15px; } }
 
-@media (max-height: 480px) {
+@media (max-height: 650px) {
+  .change-square {
+    width: 200px;
+    height: 200px;
+    line-height: 170px;
+    text-align: center;
+    border-radius: 0%;
+    border: 15px solid white;
+    transition: 0.2s;
+    font-size: 15px; }
+  .contact-resume:hover .change-square {
+    border-radius: 50%;
+    height: 200px;
+    line-height: 170px; }
+  .contact-email:hover .change-square {
+    border-radius: 50%;
+    height: 200px;
+    line-height: 170px; } }
+
+@media (max-height: 450px) {
   .change-square {
     width: 150px;
     height: 150px;
-    line-height: 120px; }
+    line-height: 120px;
+    text-align: center;
+    border-radius: 0%;
+    border: 15px solid white;
+    transition: 0.2s;
+    font-size: 15px; }
   .contact-resume:hover .change-square {
+    border-radius: 50%;
     height: 150px;
     line-height: 120px; }
   .contact-email:hover .change-square {
+    border-radius: 50%;
     height: 150px;
     line-height: 120px; } }
 
