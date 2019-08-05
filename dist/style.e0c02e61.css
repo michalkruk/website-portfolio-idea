@@ -376,7 +376,7 @@ li {
 
 @media (max-width: 450px) {
   .about-leftpanel img {
-    height: 320px;
+    height: 420px;
     width: 275px; }
   .about-leftpanel h1 {
     font-size: 40px; } }
